@@ -14,35 +14,52 @@ class Movie {
         string writer;
 
 
-        public:
-            // setters
-            void setTitle(string t) {
-                title = t;
-            }
+    public:
+        // setters
+        void setTitle(string t) {
+            title = t;
+        }
 
-            void setYear(int y) {
-                year = y;
-            }
+        void setYear(int y) {
+            year = y;
+        }
 
-            void setWriter(string w) {
-                writer = w;
-            }
+        void setWriter(string w) {
+            writer = w;
+        }
 
-            // adding getters
-            string getTitle() {
-                return title;
-            }
+        // adding getters
+        string getTitle() {
+            return title;
+        }
 
-            int getYear() {
-                return year;
-            }
+        int getYear() {
+            return year;
+        }
 
-            string getWriter() {
-                return writer;
-            }
+        string getWriter() {
+            return writer;
+        }
+
+        // pring function
+        void print() {
+            cout << "Movie: " << title << endl;
+            cout << "Year released: " << year << endl;
+            cout << "Screenwriter: " << writer << endl;
+            cout << endl;
+        }
 };
 
 int main() {
+
+    //testing
+    Movie m1;
+
+    m1.setTitle("test movie");
+    m1.setYear(2026);
+    m1.setWriter("test writer");
+
+    m1.print();
 
     return 0;
 }
