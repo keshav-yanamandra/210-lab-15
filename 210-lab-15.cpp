@@ -61,5 +61,44 @@ int main() {
 
     m1.print();
 
+
+    vector<Movie> movies;
+
+    ifstream fin("input.txt");
+
+    string t;
+    int y;
+    string w;
+
+    if (fin.good()) {
+
+        while (getline(fin, t)) {
+            fin >> y;
+            fin.ignore();
+            getline(fin, w);
+
+            Movie tmp;
+
+            tmp.setTitle(t);
+            tmp.setYear(y);
+            tmp.setWriter(w);
+
+            movies.push_back(tmp);
+        }
+
+        fin.close();
+    }
+    else {
+        cout << "File not found." << endl;
+        return 1;
+    }
+
+    cout << "MOVIE LIST" << endl;
+    cout << "----------" << endl;
+
+    for (Movie m : movies) {
+        m.print();
+    }
+
     return 0;
 }
