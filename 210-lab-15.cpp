@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <vector>
 
 using namespace std;
 
@@ -53,14 +54,13 @@ class Movie {
 int main() {
 
     //testing
-    Movie m1;
+    // Movie m1;
 
-    m1.setTitle("test movie");
-    m1.setYear(2026);
-    m1.setWriter("test writer");
+    // m1.setTitle("test movie");
+    // m1.setYear(2026);
+    // m1.setWriter("test writer");
 
-    m1.print();
-
+    // m1.print();
 
     vector<Movie> movies;
 
