@@ -12,6 +12,34 @@ class Movie {
         string title;
         int year;
         string writer;
+
+
+        public:
+            // setters
+            void setTitle(string t) {
+                title = t;
+            }
+
+            void setYear(int y) {
+                year = y;
+            }
+
+            void setWriter(string w) {
+                writer = w;
+            }
+
+            // adding getters
+            string getTitle() {
+                return title;
+            }
+
+            int getYear() {
+                return year;
+            }
+
+            string getWriter() {
+                return writer;
+            }
 };
 
 int main() {
